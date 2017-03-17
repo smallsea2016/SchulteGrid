@@ -1,0 +1,91 @@
+/*====================公共样式start====================*/
+*{margin:0;padding: 0}
+body,html{width:100%;height:100%;-webkit-text-size-adjust:none;overflow-y:auto;background-image:url(about:blank);background-attachment:fixed;}  
+
+ul,li {list-style-type: none;}
+button {border: none;outline: 0}
+
+/*按钮*/
+.btn {
+	display:inline-block;
+  width: 120px;height: 35px;
+	border-radius: 5px;
+	background-color: #fd8805;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+  border-bottom: 4px solid #cd7300;
+}
+.btn:active {
+	background: rgb(0,0,0,0.5);box-shadow: 0 0 5px;
+}
+.btn[disabled] {background-color: gray;border-bottom-color: gray}
+
+.header {position: absolute;top:0;left: 0;right: 0;padding-top:15%;text-align: center;}
+.clock {
+  display: inline-block;vertical-align: middle;width: 75px;
+  text-align: left;padding-left: 40px;height: 36px;line-height: 36px;color: #fff;
+  background: url(../images/clock.png) no-repeat;
+  background-size: contain
+}
+
+#wrap {
+	position: relative;
+	min-width:320px;max-width:640px;min-height:100%;
+	margin:auto;
+  box-shadow: 0 0 5px #aaa;
+  overflow-y:auto;
+}
+
+#content {width: 100%;overflow-y:auto;}	
+.btn-group {overflow: hidden;padding-top: 40px;padding-bottom: 20px;text-align: center;}
+.btn-group>li {float: left;width: 50%;text-align: center;}
+
+.des {margin-left: 15px;margin-right: 15px;padding: 15px;background: rgba(255,255,255,.5);border-radius: 8px;background-clip: padding-box}
+.des p {text-indent: 2em;color: #000;margin-bottom: 15px}
+/*====================公共样式end====================*/
+
+/*游戏页*/
+.game_bg {background: url(../images/game_bg.jpg),
+  url(../images/grass.jpg),
+  url(../images/grass.jpg),
+  url(../images/grass.jpg),
+  url(../images/grass.jpg),
+  url(../images/grass.jpg),
+  url(../images/grass.jpg),
+  url(../images/grass.jpg);
+  background-repeat:no-repeat; 
+  background-size: 100% auto,
+  34px 40px,
+  34px 40px,
+  34px 40px,
+  34px 40px,
+  34px 40px,
+  34px 40px,
+  34px 40px;
+  background-position:0 0,
+  35% 40%,
+  70% 50%,
+  90% 60%,
+  20% 70%,
+  60% 80%,
+  10% 85%,
+  30% 90%;
+  background-color:  #85b200
+}
+
+.game {padding-top: 41%;}
+.grid {overflow: hidden;margin-left: 10px;margin-right: 10px;background: rgba(255,255,255,.9);border-left: 2px solid #e6e6e6;border-top: 2px solid #e6e6e6;border-radius: 5px;background-clip: padding-box}
+.grid>li {float: left;display: inline;width: 20%;padding-top: 15px;padding-bottom: 15px;text-align: center;
+  background-color: #fff;border-right: 2px solid #e6e6e6;border-bottom: 2px solid #e6e6e6;box-sizing:border-box;
+}
+.circle {display: inline-block;vertical-align: middle;text-align: center;
+  color: #000;font-size: 20px;font-family: arial;
+  border-radius: 100%;background-clip: padding-box
+}
+.grid li.active {background: #85b200}
+.grid li.error  {background: #c40000}
+
+
+/*遮罩*/
+
